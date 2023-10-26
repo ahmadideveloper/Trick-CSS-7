@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border: 10px solid black;
+    margin: 150px auto;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.gallery>* {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.gallery>img {
+    height: 100%;
+}
+
+.gallery>h2 {
+    background: rgba(0, 0, 0, 0.657);
+    height: 35%;
+    top: -100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 140px;
+    padding-left: 20px;
+
+    transition: 1s;
+}
+
+.gallery>p {
+    background: rgba(255, 68, 0, 0.603);
+    height: 65%;
+    bottom: -100%;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    transition: 1s;
+}
+
+.gallery:hover>h2 {
+    top: 0;
+}
+
+.gallery:hover>p {
+    bottom: 0;
+}
